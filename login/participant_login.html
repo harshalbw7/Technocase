@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Participant Login</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/stu.css">
+
+
+	<link rel="stylesheet" href="../home/css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" href="../home/css/style.css">
+      <!-- responsive-->
+      <link rel="stylesheet" href="../home/css/responsive.css">
+      <!-- awesome fontfamily -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+</head>
+<body background="images/p6.png">
+	<header>
+		<div class="header">
+		   <div class="container-fluid">
+			  <div class="row d_flex">
+				 <div class=" col-md-2 col-sm-3 col logo_section">
+					<div class="full">
+					   <div class="center-desk">
+						  <div class="logo">
+							 <a href="index.html"><img src="images/logo1.png" alt="#" height="70" width="70" /></a>
+						  </div>
+					   </div>
+					</div>
+				 </div>
+				 <div class="col-md-8 col-sm-9">
+					<nav class="navigation navbar navbar-expand-md navbar-dark ">
+					   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+					   <span class="navbar-toggler-icon"></span>
+					   </button>
+					   <div class="collapse navbar-collapse" id="navbarsExample04">
+						  <ul class="navbar-nav mr-auto">
+							 <li class="nav-item active">
+								<a class="nav-link" href="../home/index.html">Home</a>
+							 </li>
+							 <li class="nav-item">
+								<a class="nav-link" href="../home/about.html">About</a>
+							 </li>
+							 <li class="nav-item">
+								<a class="nav-link" href="../home/contact.html">Contact Us</a>
+							 </li>
+							 <li class="nav-item">
+								<a class="nav-link" href="../home/view_feedback.php">Feedback</a>
+							 </li>
+							 <li class="nav-item">
+								<a class="nav-link" href="../login/Organiser_login.html">Organiser Login</a>
+							 </li>
+							 <li class="nav-item">
+								<a class="nav-link" href="../login/participant_login.html">Paticipant Login</a>
+							 </li>
+							 <li class="nav-item">
+								<a class="nav-link" href="../login/judge_login.html">Jugde Login</a>
+							 </li>
+						  </ul>
+					   </div>
+					</nav>
+				 </div>
+				 <div class=" col-md-2 col-sm-3 col logo_section">
+					<div class="full">
+					   <div class="center-desk">
+						  <div class="link">
+							 <a class="nav-link" href="https://www.iicmr.org" style="color: darkorange"><b>www.iicmr.org</b></a>
+						  </div>
+					   </div>
+					</div>
+				 </div>
+			  </div>
+		   </div>
+		</div>
+	 </header><br><br><br><br>
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<div class="login100-pic js-tilt" data-tilt>
+					<img src="images/img-01.png" alt="IMG">
+				</div>
+
+				<form method="POST" action="../php resource/participant.php" s="login100-form validate-form">
+					<span class="login100-form-title">
+						Participant Login
+					</span>
+
+					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+						<input class="input100" type="text" name="username" placeholder="Username">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+						</span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate = "Password is required">
+						<input class="input100" type="password" name="pass" placeholder="Password">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-lock" aria-hidden="true"></i>
+						</span>
+					</div>
+					
+					<div class="container-login100-form-btn">
+						<button class="login100-form-btn" name="login">
+							Login
+						</button>
+					</div>
+
+					<div class="text-center p-t-12">
+						<span class="txt1">
+							if not register
+						</span>
+						<a class="txt2" href="../login/stud_register.html">
+							Sign up
+						</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+<!--===============================================================================================-->	
+	<script src="../vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/tilt/tilt.jquery.min.js"></script>
+	<script >
+		$('.js-tilt').tilt({
+			scale: 1.1
+		})
+	</script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+	<footer>
+		<div class="copyright text_align_left">
+		   <div class="container">
+			  <div class="row d_flex">
+				 <div class="col-md-6">
+					<p>© 2023 Technocase Event , IICMR  <a href="https://html.design/"> </a></p>
+				 </div>
+				 <div class="col-md-6">
+					<ul class="social_icon text_align_center">
+					   <li> <a href="Javascript:void(0)"><i class="fa fa-facebook-f"></i></a></li>
+					   <li> <a href="Javascript:void(0)"><i class="fa fa-twitter"></i></a></li>
+					   <li> <a href="Javascript:void(0)"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+					   <li> <a href="Javascript:void(0)"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+					   <li> <a href="Javascript:void(0)"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+					</ul>
+				 </div>
+			  </div>
+		   </div>
+		</div>
+	 </div>
+  </footer>
+
+</body>
+</html>

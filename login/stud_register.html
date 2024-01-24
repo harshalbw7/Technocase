@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Technocase Student Registration</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- Custom Theme files -->
+<link href="css/stud_register.css" rel="stylesheet" type="text/css" media="all" />
+<!-- //Custom Theme files -->
+<!-- web font -->
+<link href="//fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i" rel="stylesheet">
+<!-- //web font -->
+<!--===============================================================================================-->	
+<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/stu.css">
+
+
+	<link rel="stylesheet" href="../home/css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" href="../home/css/style.css">
+      <!-- responsive-->
+      <link rel="stylesheet" href="../home/css/responsive.css">
+      <!-- awesome fontfamily -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+</head>
+<style>
+	 input::placeholder{
+		color: aliceblue;
+		font-weight: bold;
+	 }
+</style>
+<body background="../home/images/banner .jpg">
+	<header>
+		<div class="header">
+		   <div class="container-fluid">
+			  <div class="row d_flex">
+				 <div class=" col-md-2 col-sm-3 col logo_section">
+					<div class="full">
+					   <div class="center-desk">
+						  <div class="logo">
+							 <a href="index.html"><img src="images/logo1.png" alt="#" height="70" width="70" /></a>
+						  </div>
+					   </div>
+					</div>
+				 </div>
+				 <div class="col-md-8 col-sm-9">
+					<nav class="navigation navbar navbar-expand-md navbar-dark ">
+					   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+					   <span class="navbar-toggler-icon"></span>
+					   </button>
+					   <div class="collapse navbar-collapse" id="navbarsExample04">
+						  <ul class="navbar-nav mr-auto">
+							 <li class="nav-item active">
+								<a class="nav-link" href="../home/index.html">Home</a>
+							 </li>
+							 <li class="nav-item">
+								<a class="nav-link" href="../home/about.html">About</a>
+							 </li>
+							 <li class="nav-item">
+								<a class="nav-link" href="../home/contact.html">Contact Us</a>
+							 </li>
+							 <li class="nav-item">
+								<a class="nav-link" href="../home/view_feedback.php">Feedback</a>
+							 </li>
+							 <li class="nav-item">
+								<a class="nav-link" href="../login/Organiser_login.html">Organiser Login</a>
+							 </li>
+							 <li class="nav-item">
+								<a class="nav-link" href="../login/participant_login.html">Paticipant Login</a>
+							 </li>
+							 <li class="nav-item">
+								<a class="nav-link" href="../login/judge_login.html">Jugde Login</a>
+							 </li>
+						  </ul>
+					   </div>
+					</nav>
+				 </div>
+				 <div class=" col-md-2 col-sm-3 col logo_section">
+					<div class="full">
+					   <div class="center-desk">
+						  <div class="link">
+							 <a class="nav-link" href="https://www.iicmr.org" style="color: darkorange"><b>www.iicmr.org</b></a>
+						  </div>
+					   </div>
+					</div>
+				 </div>
+			  </div>
+		   </div>
+		</div>
+	 </header><br><br><br><br>
+	<!-- main -->
+	<div class="main-w3layouts wrapper" style="background-image: url(..//home/images/banner\ .jpg);">
+		<h1 style="color:orange; font-weight: bold;">Participant Registration</h1>
+		<div class="main-agileinfo">
+			<div class="agileits-top">
+				<form method="post" action="../php resource/registration.php" onsubmit="return validateForm()">
+					<input class="text" type="text" name="name" id="name" placeholder="Name" required="" pattern="^[a-zA-Z]+ [a-zA-Z]+$">
+					<br>
+					<input class="text" type="text" name="puser" id="puser" placeholder="Username(only letters and digit)" required="" pattern="^[a-zA-Z]+[0-9]*">
+					<br>
+					<input class="text" type="text" name="contact" id="Contact" placeholder="Contact(only digit)" required="" maxlength="10" pattern="\d{10}">
+					<br>
+					<input class="text" type="text" name="college" id="College_Name" placeholder="College Name" required="">
+					<br>
+					<input class="text" type="text" name="course" id="course" placeholder="Course (MCA,MBA,BE)" required="" pattern="(MCA)|(MBA)|(BE)">
+
+					<input class="text email" type="email" name="email" id="email" placeholder="Email" required="" pattern="[a-z0-9]+@[a-z]+\.[a-z]{2,3}">
+
+					<input class="text" type="password" id="pass" name="ppass" placeholder="Password" required="" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,16}">
+					
+					<input class="text w3lpass" type="password" id="cpass" name="cpass" placeholder="Confirm Password" required="" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,16}">
+					<div class="wthree-text">
+						<label class="anim">
+							<input type="checkbox" class="checkbox" required="">
+							<span>I Agree To The Terms & Conditions</span>
+						</label>
+						<div class="clear"> </div>
+					</div>
+					<input type="submit" value="Register" name="register">
+				</form>
+				<p>If already registered? , <a href="../login/participant_login.html"> Log in</a></p>
+			</div>
+		</div>
+		<!-- copyright -->
+	</div>
+	<!-- //main -->
+</body>
+<script>
+	function validateForm() {
+		var password = document.getElementById("pass").value;
+		var confirmPassword = document.getElementById("cpass").value;
+	  
+		if (password !== confirmPassword) {
+		  alert("Passwords do not match!");
+		  return false; // Prevent form submission
+		}
+	  
+		// Continue with form submission if passwords match
+		return true;
+	  }
+</script>
+<script src="js/main.js"></script>
+	<footer>
+		<div class="copyright text_align_left">
+		   <div class="container">
+			  <div class="row d_flex">
+				 <div class="col-md-6">
+					<p>© 2023 Technocase Event , IICMR  <a href="https://html.design/"> </a></p>
+				 </div>
+				 <div class="col-md-6">
+					<ul class="social_icon text_align_center">
+					   <li> <a href="Javascript:void(0)"><i class="fa fa-facebook-f"></i></a></li>
+					   <li> <a href="Javascript:void(0)"><i class="fa fa-twitter"></i></a></li>
+					   <li> <a href="Javascript:void(0)"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+					   <li> <a href="Javascript:void(0)"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+					   <li> <a href="Javascript:void(0)"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+					</ul>
+				 </div>
+			  </div>
+		   </div>
+		</div>
+	 </div>
+  </footer>
+</html>
